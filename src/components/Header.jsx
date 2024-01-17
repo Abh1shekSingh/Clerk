@@ -1,5 +1,5 @@
 
-import { SignOutButton, useUser } from "@clerk/clerk-react";
+import { SignOutButton } from "@clerk/clerk-react";
 
 function Header() {
 
