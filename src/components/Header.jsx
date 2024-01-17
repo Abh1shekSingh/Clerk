@@ -1,12 +1,19 @@
 
-import { SignOutButton } from "@clerk/clerk-react";
-
+import { SignOutButton, useUser } from "@clerk/clerk-react";
+import "../App.css"
 function Header() {
 
+  const { user } = useUser();
+  console.log(user)
+
   return (
-    <div>
-      <SignOutButton afterSignOutUrl="/" />
-    </div>
+    <header>
+      <h2>Dashboard</h2>
+      <div className="header-components">
+          <img src={user.imageUrl} alt="Profile" />
+        <SignOutButton afterSignOutUrl="/" />
+      </div>
+    </header>
   );
 }
 

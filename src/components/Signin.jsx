@@ -1,13 +1,16 @@
 
-import { SignInButton, SignedIn, SignedOut } from "@clerk/clerk-react";
+import { SignInButton, SignedIn, SignedOut, useUser } from "@clerk/clerk-react";
 import Header from "./Header";
 import Home from "./Home";
+import "../App.css"
 
 function Signin() {
+
+  const { user } = useUser();
     
   return (
     <div>
-      <Header /> {/* Include your header component */}
+      {user && <Header />} 
       <div>
         <SignedOut>
           <SignInButton />

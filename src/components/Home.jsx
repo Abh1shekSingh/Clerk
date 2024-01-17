@@ -41,8 +41,8 @@ theme={{
     }}
 > 
 
-    <Space direction='vertical'  style={{ textAlign: 'center', marginTop: '50px' , backgroundColor : "rgba(54, 69, 79, 0.8)" , height:"70vh", width:"99.5vw"}}>
-    <UserButton />
+    <Space direction='vertical'  style={{ textAlign: 'center', marginTop: '50px' , backgroundColor : "rgba(54, 69, 79, 0.8)" , height:"70vh", width:"100%" , borderRadius:"12px"}}>
+    
 
     <h1>Welcome to your dashboard {user.firstName}</h1>
 
